@@ -68,3 +68,61 @@ Jun 13, 2025 6:29:33 AM sofia.streaming.server.StreamingServer$ClientHandler run
 INFO: 🔗 Connected: 127.0.0.1
 Jun 13, 2025 6:29:36 AM sofia.streaming.server.StreamingServer$ClientHandler run
 INFO: 📤 Sending file Grb-360p.mp4 to client 127.0.0.1 via UDP
+Jun 13, 2025 6:46:26 PM sofia.streaming.server.StreamingServer main
+INFO: 🟢 Streaming Server started on port 8888
+Jun 13, 2025 6:49:25 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=7.558220691293595 Mbps
+Jun 13, 2025 6:49:30 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-360p.mp4 via UDP
+Jun 13, 2025 6:49:51 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=6.6063483041143005 Mbps
+Jun 13, 2025 6:49:53 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-240p.mp4 via UDP
+Jun 13, 2025 6:51:01 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=5.912886331383587 Mbps
+Jun 13, 2025 6:51:02 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-240p.mp4 via RTP
+Jun 13, 2025 6:51:25 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=8.452986557339756 Mbps
+Jun 13, 2025 6:51:26 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-240p.mp4 via UDP
+Jun 13, 2025 7:03:42 PM sofia.streaming.server.StreamingServer main
+INFO: 🟢 Streaming Server started on port 8888
+Jun 13, 2025 7:04:05 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=10.725115340739576 Mbps
+Jun 13, 2025 7:04:11 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-240p.mp4 via UDP
+Jun 13, 2025 7:11:50 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=11.706667853141985 Mbps
+Jun 13, 2025 7:11:51 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-240p.mp4 via UDP
+Jun 13, 2025 7:16:23 PM sofia.streaming.server.StreamingServer main
+INFO: 🟢 Streaming Server started on port 8888
+Jun 13, 2025 7:16:58 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=11.139009585577446 Mbps
+Jun 13, 2025 7:16:59 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-240p.mp4 via UDP
+Jun 13, 2025 7:19:11 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=5.252156189964531 Mbps
+Jun 13, 2025 7:19:12 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-240p.mp4 via UDP
+Jun 13, 2025 7:43:47 PM sofia.streaming.server.StreamingServer main
+INFO: 🟢 Streaming Server started on port 8888
+Jun 13, 2025 7:44:08 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=11.121082897845596 Mbps
+Jun 13, 2025 7:44:10 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-240p.mp4 via UDP
+Jun 13, 2025 8:07:32 PM sofia.streaming.server.StreamingServer main
+INFO: 🟢 Streaming Server started on port 8888
+Jun 13, 2025 8:07:58 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📩 Received: Format=mp4, Speed=9.519933857109164 Mbps
+Jun 13, 2025 8:07:59 PM sofia.streaming.server.StreamingServer handleClient
+INFO: 📦 Streaming file: Grb-240p.mp4 via UDP
+Jun 13, 2025 10:56:51 PM sofia.streaming.server.StreamingServer main
+INFO: Streaming Server started on port 8888
+Jun 13, 2025 11:13:26 PM sofia.streaming.server.StreamingServer handleClient
+INFO: Received: Format=mp4, Speed=7.163660571473348 Mbps
+Jun 13, 2025 11:13:29 PM sofia.streaming.server.StreamingServer handleClient
+INFO:  Streaming file: Grb-480p.mp4 via UDP
+Jun 13, 2025 11:28:12 PM sofia.streaming.server.StreamingServer main
+INFO: Streaming Server started on port 8888

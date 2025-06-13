@@ -30,3 +30,295 @@ Jun 13, 2025 6:29:33 AM sofia.streaming.client.StreamingClientGUI connectToServe
 INFO: [GUI] Speed test: 4.4830361570436335 Mbps
 Jun 13, 2025 6:29:36 AM sofia.streaming.client.StreamingClientGUI connectToServer
 INFO: ▶️ Launching ffplay: Grb-360p.mp4 via UDP
+Jun 13, 2025 6:49:25 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 7.558220691293595 Mbps
+Jun 13, 2025 6:49:42 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:49:51 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 6.6063483041143005 Mbps
+Jun 13, 2025 6:49:53 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:50:04 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:50:15 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:50:15 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:50:26 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:50:26 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:50:38 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:50:48 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:50:49 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:00 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:01 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 5.912886331383587 Mbps
+Jun 13, 2025 6:51:10 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:51:11 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:13 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:21 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:22 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:24 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:25 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 8.452986557339756 Mbps
+Jun 13, 2025 6:51:32 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:51:33 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:35 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:51:37 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:43 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:46 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:48 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 6:51:54 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:55 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:51:59 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:52:06 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 6:52:08 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 6:52:10 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:52:16 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:52:17 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:52:19 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:52:21 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:52:27 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 6:52:30 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:52:32 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 6:52:43 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:52:50 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:52:52 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:52:54 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:00 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:53:01 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:11 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:12 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:16 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:22 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:23 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:53:27 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:53:33 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:53:34 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:36 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:38 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:44 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:45 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:53:55 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:56 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:53:58 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:54:09 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:54:11 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:54:18 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:54:21 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:54:22 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:54:29 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:54:32 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:54:39 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:54:40 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:54:43 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:54:44 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:54:51 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:54:54 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:54:55 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:01 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:02 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:06 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:55:12 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 6:55:13 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:16 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:17 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:23 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:55:24 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:27 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:28 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:34 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:38 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:39 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:55:45 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:46 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:49 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:55:50 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 6:55:56 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:00 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:56:01 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:56:07 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:56:11 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:12 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:18 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:19 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:22 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:23 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:29 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 6:56:33 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 6:56:34 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:40 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:41 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 6:56:44 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:51 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:52 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:55 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 6:56:56 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-480p.mp4
+Jun 13, 2025 7:04:05 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 10.725115340739576 Mbps
+Jun 13, 2025 7:04:22 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 7:11:49 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 11.706667853141985 Mbps
+Jun 13, 2025 7:12:02 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 7:16:58 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 11.139009585577446 Mbps
+Jun 13, 2025 7:17:10 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 7:19:11 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 5.252156189964531 Mbps
+Jun 13, 2025 7:19:23 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 7:44:08 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 11.121082897845596 Mbps
+Jun 13, 2025 7:44:21 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 8:07:58 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 9.519933857109164 Mbps
+Jun 13, 2025 8:07:59 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO:  ffplay launched for: udp://localhost:1234
+Jun 13, 2025 8:08:10 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 8:08:10 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO: Stopped previous ffplay instance
+Jun 13, 2025 8:08:10 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO:  ffplay launched for: rtp://localhost:1222
+Jun 13, 2025 11:13:26 PM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Initial speed test: 7.163660571473348 Mbps
+Jun 13, 2025 11:13:29 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO:  ffplay launched for: udp://localhost:1234
+Jun 13, 2025 11:13:40 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 11:13:40 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO: Stopped previous ffplay instance
+Jun 13, 2025 11:13:40 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO:  ffplay launched for: rtp://localhost:1222
+Jun 13, 2025 11:13:51 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 11:13:51 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO: Stopped previous ffplay instance
+Jun 13, 2025 11:13:51 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO:  ffplay launched for: rtp://localhost:1222
+Jun 13, 2025 11:14:02 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 11:14:02 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO: Stopped previous ffplay instance
+Jun 13, 2025 11:14:02 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO:  ffplay launched for: rtp://localhost:1222
+Jun 13, 2025 11:14:13 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-1080p.mp4
+Jun 13, 2025 11:14:13 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO: Stopped previous ffplay instance
+Jun 13, 2025 11:14:13 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO:  ffplay launched for: rtp://localhost:1222
+Jun 13, 2025 11:14:24 PM sofia.streaming.client.StreamingClientGUI lambda$1
+INFO: Adaptive switch to: Grb-720p.mp4
+Jun 13, 2025 11:14:24 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO: Stopped previous ffplay instance
+Jun 13, 2025 11:14:24 PM sofia.streaming.client.StreamingClientGUI startFFplay
+INFO:  ffplay launched for: rtp://localhost:1222

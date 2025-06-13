@@ -13,32 +13,49 @@ import java.util.logging.*;
 public class StreamingClientGUI extends JFrame {
 
     private static final long serialVersionUID = 1L;
-
+    
+    //components
     private JComboBox<String> formatBox;
     private JComboBox<String> fileBox;
     private JComboBox<String> protocolBox;
     private JButton connectButton;
     private JTextArea outputArea;
+    
 
     private static final Logger logger = Logger.getLogger("StreamingClientGUILogger");
 
+    private volatile Process ffplayProcess = null;
+    private volatile boolean adaptiveRunning = false;
+    private String selectedFile;
+    private String selectedFormat;
+    private String selectedProtocol;
+
+    
+    
+    
     public StreamingClientGUI() {
         super("Streaming Client GUI");
         setupLogger();
         setupUI();
     }
 
+    
+       //Δημιουργια UI του client
     private void setupUI() {
-        setSize(500, 300);
+        setSize(600, 350);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
         JPanel topPanel = new JPanel(new GridLayout(4, 2));
+        
+        //επιλογές του χρήστη
         formatBox = new JComboBox<>(new String[]{"mp4", "avi", "mkv"});
         fileBox = new JComboBox<>();
         protocolBox = new JComboBox<>(new String[]{"Auto", "TCP", "UDP", "RTP"});
         connectButton = new JButton("Start Streaming");
-
+        
+        
+        //επιλογές στο Panel
         topPanel.add(new JLabel("Format:"));
         topPanel.add(formatBox);
         topPanel.add(new JLabel("Protocol:"));
@@ -50,6 +67,7 @@ public class StreamingClientGUI extends JFrame {
 
         add(topPanel, BorderLayout.NORTH);
 
+        //Σημειίο για έξοδο των Logs
         outputArea = new JTextArea();
         outputArea.setEditable(false);
         add(new JScrollPane(outputArea), BorderLayout.CENTER);
@@ -57,18 +75,22 @@ public class StreamingClientGUI extends JFrame {
         connectButton.addActionListener(this::connectToServer);
     }
 
+    
+    //Σύνδεση με server και ξεκινημα ροής
     private void connectToServer(ActionEvent e) {
-        String format = formatBox.getSelectedItem().toString();
-        String protocolInput = protocolBox.getSelectedItem().toString();
+        selectedFormat = formatBox.getSelectedItem().toString();
+        selectedProtocol = protocolBox.getSelectedItem().toString();
 
+        //Τεστ ταχύτητας
         double speed = performSpeedTest();
-        logger.info("[GUI] Speed test: " + speed + " Mbps");
+        logger.info("[GUI] Initial speed test: " + speed + " Mbps");
 
         try (Socket socket = new Socket("localhost", 8888);
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
 
-            out.println(format + ";" + speed);
+        	//αποστολή τεστ ταχύτητας στον server
+            out.println(selectedFormat + ";" + speed);
             outputArea.append("Available files:\n");
             List<String> options = new ArrayList<>();
 
@@ -78,30 +100,30 @@ public class StreamingClientGUI extends JFrame {
                 outputArea.append(line + "\n");
             }
 
+            
+            //ενημέρωαση dropdown
             fileBox.removeAllItems();
             for (String file : options) fileBox.addItem(file);
-
-            String selectedFile = (String) JOptionPane.showInputDialog(this, "Choose file:",
+            
+            //επιλογή αρχείου απο χρήστη
+            selectedFile = (String) JOptionPane.showInputDialog(this, "Choose file:",
                     "Select", JOptionPane.PLAIN_MESSAGE, null,
                     options.toArray(), options.get(0));
 
             if (selectedFile == null) return;
             fileBox.setSelectedItem(selectedFile);
 
-            String protocol = protocolInput.equals("Auto") ? autoProtocol(selectedFile) : protocolInput;
-            out.println(selectedFile + ";" + protocol);
+            //επιλογή πρωτοκόλλου
+            if (selectedProtocol.equals("Auto"))
+                selectedProtocol = autoProtocol(selectedFile);
 
-            String target = switch (protocol) {
-                case "UDP" -> "udp://localhost:1234";
-                case "TCP" -> "tcp://localhost:1234";
-                case "RTP" -> "rtp://localhost:1234";
-                default -> throw new IllegalArgumentException("Invalid protocol: " + protocol);
-            };
+            out.println(selectedFile + ";" + selectedProtocol);
+            
+            //Αναπαραγωγή
+            startFFplay(selectedProtocol);
+            logClientStats(selectedFile, selectedProtocol, speed);
 
-            logger.info("▶️ Launching ffplay: " + selectedFile + " via " + protocol);
-            new ProcessBuilder("ffplay", "-fflags", "nobuffer", "-i", target).inheritIO().start();
-
-            logClientStats(selectedFile, protocol, speed);
+            startAdaptiveThread(out, selectedFormat, selectedProtocol);
 
         } catch (Exception ex) {
             logger.severe("❌ GUI error: " + ex.getMessage());
@@ -109,38 +131,93 @@ public class StreamingClientGUI extends JFrame {
         }
     }
 
-    private void setupLogger() {
-        try {
-            LogManager.getLogManager().reset();
-            File logDir = new File("logs");
-            if (!logDir.exists()) logDir.mkdirs();
-            FileHandler fh = new FileHandler("logs/gui.log", true);
-            fh.setFormatter(new SimpleFormatter());
-            logger.addHandler(fh);
-            logger.setLevel(Level.INFO);
-        } catch (IOException e) {
-            System.err.println("⚠️ Failed to initialize GUI logger: " + e.getMessage());
+    
+    //Ξεκινά-τερματίζει ffplay για το σωστό πρωτόκολλο
+    private void startFFplay(String protocol) throws IOException {
+    	
+    	if (ffplayProcess != null && ffplayProcess.isAlive()) {
+            ffplayProcess.destroy();
+            logger.info("Stopped previous ffplay instance");
         }
+
+        String target = switch (protocol) {
+            case "UDP" -> "udp://localhost:1234";
+            case "TCP" -> "tcp://localhost:1224";
+            case "RTP" -> "rtp://localhost:1222";
+            default -> throw new IllegalArgumentException("Invalid protocol: " + protocol);
+        };
+        
+        
+        //Εκκίνηση ffplay με low latency flags
+        List<String> cmd = List.of(
+                "ffplay",
+                "-fflags", "nobuffer",
+                "-flags", "low_delay",
+                "-probesize", "32",
+                "-analyzeduration", "0",
+                "-buffer_size", "8192",
+                "-i", target
+            );
+        
+        ffplayProcess = new ProcessBuilder(cmd).inheritIO().start();
+        logger.info(" ffplay launched for: " + target);
+    }
+    
+    //adaptive bitrate logic σε νέο thread
+    private void startAdaptiveThread(PrintWriter out, String format, String protocol) {
+        adaptiveRunning = true;
+        new Thread(() -> {
+            double lastSpeed = -1;
+            while (adaptiveRunning) {
+                try {
+                	//ανα 10 δευτερολεπτα
+                    Thread.sleep(10000);
+                    double newSpeed = performSpeedTest();
+                    if (Math.abs(newSpeed - lastSpeed) > 1.0) {
+                        String newResolution = getResolutionForSpeed(newSpeed);
+                        String newFile = selectedFile.replaceAll("-(240|360|480|720|1080)p", "-" + newResolution);
+                        String newProtocol = autoProtocol(newFile);
+
+                        logger.info("Adaptive switch to: " + newFile);
+                        out.println(newFile + ";" + newProtocol);
+                        startFFplay(newProtocol);
+                        logClientStats(newFile, newProtocol, newSpeed);
+                        lastSpeed = newSpeed;
+                    }
+                } catch (Exception ex) {
+                    logger.warning("Adaptive thread error: " + ex.getMessage());
+                }
+            }
+        }).start();
+    }
+    
+    
+    //Επιστροφή ανάλυσης που αντιστοιχεί σε δεδομένη ταχύτητα
+    private String getResolutionForSpeed(double speed) {
+        if (speed < 1.0) return "240p";
+        else if (speed < 2.5) return "360p";
+        else if (speed < 5.0) return "480p";
+        else if (speed < 8.0) return "720p";
+        else return "1080p";
     }
 
+    //εικονική δοκιμή ταχύτητας δικτύου
     private double performSpeedTest() {
         try {
-            System.out.print("Testing speed");
-            for (int i = 0; i < 5; i++) {
-                Thread.sleep(1000);
-                System.out.print(".");
-            }
-            System.out.println();
+            Thread.sleep(1000);
         } catch (InterruptedException ignored) {}
         return 4.0 + Math.random() * 10;
     }
 
+    //επιλογή πρωτοκόλλου με βάση ανάλυση αρχείου
     private String autoProtocol(String fileName) {
         if (fileName.contains("240p")) return "TCP";
         if (fileName.contains("360p") || fileName.contains("480p")) return "UDP";
         return "RTP";
     }
 
+    
+    //καταγραφή στατιστικών σε αρχείο CSV
     private void logClientStats(String file, String protocol, double speed) {
         File statsFile = new File("logs/stats_client.csv");
         try {
@@ -158,6 +235,23 @@ public class StreamingClientGUI extends JFrame {
         }
     }
 
+    //ο Logger GUI
+    private void setupLogger() {
+        try {
+            LogManager.getLogManager().reset();
+            File logDir = new File("logs");
+            if (!logDir.exists()) logDir.mkdirs();
+            FileHandler fh = new FileHandler("logs/gui.log", true);
+            fh.setFormatter(new SimpleFormatter());
+            logger.addHandler(fh);
+            logger.setLevel(Level.INFO);
+        } catch (IOException e) {
+            System.err.println("⚠️ Failed to initialize GUI logger: " + e.getMessage());
+        }
+    }
+    
+    
+    //εκκίνηση
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new StreamingClientGUI().setVisible(true));
     }
