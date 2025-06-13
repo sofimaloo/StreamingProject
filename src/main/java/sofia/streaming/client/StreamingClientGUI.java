@@ -1,164 +1,159 @@
 package sofia.streaming.client;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
+import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+
 import java.io.*;
 import java.net.Socket;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.List;
-import java.util.logging.*;
 
-public class StreamingClientGUI extends JFrame {
+public class StreamingClientGUI extends Application {
 
-    private static final long serialVersionUID = 1L;
+    private ComboBox<String> formatBox;
+    private ComboBox<String> fileBox;
+    private ComboBox<String> protocolBox;
+    private TextArea logArea;
 
-    private JComboBox<String> formatBox;
-    private JComboBox<String> fileBox;
-    private JComboBox<String> protocolBox;
-    private JButton connectButton;
-    private JTextArea outputArea;
+    private double speedMbps;
+    private final String serverHost = "localhost";
+    private final int serverPort = 8888;
 
-    private static final Logger logger = Logger.getLogger("StreamingClientGUILogger");
+    @Override
+    public void start(Stage primaryStage) {
+        formatBox = new ComboBox<>();
+        fileBox = new ComboBox<>();
+        protocolBox = new ComboBox<>();
+        logArea = new TextArea();
+        logArea.setEditable(false);
+        logArea.setPrefHeight(200);
 
-    public StreamingClientGUI() {
-        super("Streaming Client GUI");
-        setupLogger();
-        setupUI();
+        formatBox.getItems().addAll("mp4", "avi", "mkv");
+        formatBox.setValue("mp4");
+
+        Button speedTestBtn = new Button("1. Test Speed & Get Files");
+        Button startStreamingBtn = new Button("2. Start Streaming");
+
+        protocolBox.getItems().addAll("Auto", "TCP", "UDP", "RTP");
+        protocolBox.setValue("Auto");
+
+        speedTestBtn.setOnAction(e -> new Thread(this::performSpeedTestAndFetchFiles).start());
+        startStreamingBtn.setOnAction(e -> new Thread(this::startStreaming).start());
+
+        VBox root = new VBox(10,
+                new Label("Select Format:"), formatBox,
+                speedTestBtn,
+                new Label("Available Files:"), fileBox,
+                new Label("Select Protocol:"), protocolBox,
+                startStreamingBtn,
+                new Label("Logs:"), logArea
+        );
+        root.setPadding(new Insets(10));
+
+        Scene scene = new Scene(root, 400, 500);
+        primaryStage.setTitle("Streaming Client GUI");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
-    private void setupUI() {
-        setSize(500, 300);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLayout(new BorderLayout());
+    private void performSpeedTestAndFetchFiles() {
+        log("Testing speed...");
+        speedMbps = simulateSpeedTest();
+        log("Speed: " + String.format("%.2f", speedMbps) + " Mbps");
 
-        JPanel topPanel = new JPanel(new GridLayout(4, 2));
-        formatBox = new JComboBox<>(new String[]{"mp4", "avi", "mkv"});
-        fileBox = new JComboBox<>();
-        protocolBox = new JComboBox<>(new String[]{"Auto", "TCP", "UDP", "RTP"});
-        connectButton = new JButton("Start Streaming");
+        try (Socket socket = new Socket(serverHost, serverPort);
+             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+             PrintWriter out = new PrintWriter(socket.getOutputStream(), true)) {
 
-        topPanel.add(new JLabel("Format:"));
-        topPanel.add(formatBox);
-        topPanel.add(new JLabel("Protocol:"));
-        topPanel.add(protocolBox);
-        topPanel.add(new JLabel("File:"));
-        topPanel.add(fileBox);
-        topPanel.add(new JLabel(""));
-        topPanel.add(connectButton);
+            String format = formatBox.getValue();
+            out.println(format + ";" + speedMbps);
 
-        add(topPanel, BorderLayout.NORTH);
-
-        outputArea = new JTextArea();
-        outputArea.setEditable(false);
-        add(new JScrollPane(outputArea), BorderLayout.CENTER);
-
-        connectButton.addActionListener(this::connectToServer);
-    }
-
-    private void connectToServer(ActionEvent e) {
-        String format = formatBox.getSelectedItem().toString();
-        String protocolInput = protocolBox.getSelectedItem().toString();
-
-        double speed = performSpeedTest();
-        logger.info("[GUI] Speed test: " + speed + " Mbps");
-
-        try (Socket socket = new Socket("localhost", 8888);
-             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
-
-            out.println(format + ";" + speed);
-            outputArea.append("Available files:\n");
-            List<String> options = new ArrayList<>();
-
+            List<String> fileList = new ArrayList<>();
             String line;
-            while (!(line = in.readLine()).equals("END")) {
-                options.add(line);
-                outputArea.append(line + "\n");
+            while ((line = in.readLine()) != null && !line.equals("END")) {
+                fileList.add(line);
             }
 
-            fileBox.removeAllItems();
-            for (String file : options) fileBox.addItem(file);
+            Platform.runLater(() -> {
+                fileBox.getItems().clear();
+                fileBox.getItems().addAll(fileList);
+                if (!fileList.isEmpty()) {
+                    fileBox.setValue(fileList.get(0));
+                }
+                log("Received " + fileList.size() + " files from server.");
+            });
 
-            String selectedFile = (String) JOptionPane.showInputDialog(this, "Choose file:",
-                    "Select", JOptionPane.PLAIN_MESSAGE, null,
-                    options.toArray(), options.get(0));
+        } catch (IOException e) {
+            log("Error connecting to server: " + e.getMessage());
+        }
+    }
 
-            if (selectedFile == null) return;
-            fileBox.setSelectedItem(selectedFile);
+    private void startStreaming() {
+        String fileName = fileBox.getValue();
+        if (fileName == null) {
+            log("Select a file first!");
+            return;
+        }
 
-            String protocol = protocolInput.equals("Auto") ? autoProtocol(selectedFile) : protocolInput;
-            out.println(selectedFile + ";" + protocol);
+        String protoInput = protocolBox.getValue();
+        String protocol = resolveProtocol(protoInput, fileName);
 
+        log("Selected file: " + fileName);
+        log("Protocol: " + protocol);
+
+        try (Socket socket = new Socket(serverHost, serverPort);
+             PrintWriter out = new PrintWriter(socket.getOutputStream(), true)) {
+
+            out.println("mp4;" + speedMbps);
+            out.println(fileName + ";" + protocol);
+
+        } catch (IOException e) {
+            log("Error sending stream request: " + e.getMessage());
+            return;
+        }
+
+        try {
             String target = switch (protocol) {
-                case "UDP" -> "udp://localhost:1234";
                 case "TCP" -> "tcp://localhost:1234";
+                case "UDP" -> "udp://localhost:1234";
                 case "RTP" -> "rtp://localhost:1234";
-                default -> throw new IllegalArgumentException("Invalid protocol: " + protocol);
+                default -> "udp://localhost:1234";
             };
 
-            logger.info("▶️ Launching ffplay: " + selectedFile + " via " + protocol);
-            new ProcessBuilder("ffplay", "-fflags", "nobuffer", "-i", target).inheritIO().start();
+            List<String> cmd = List.of("ffplay", "-fflags", "nobuffer", "-i", target);
+            new ProcessBuilder(cmd).inheritIO().start();
+            log("Streaming started...");
 
-            logClientStats(selectedFile, protocol, speed);
-
-        } catch (Exception ex) {
-            logger.severe("❌ GUI error: " + ex.getMessage());
-            outputArea.append("Error: " + ex.getMessage());
-        }
-    }
-
-    private void setupLogger() {
-        try {
-            LogManager.getLogManager().reset();
-            File logDir = new File("logs");
-            if (!logDir.exists()) logDir.mkdirs();
-            FileHandler fh = new FileHandler("logs/gui.log", true);
-            fh.setFormatter(new SimpleFormatter());
-            logger.addHandler(fh);
-            logger.setLevel(Level.INFO);
         } catch (IOException e) {
-            System.err.println("⚠️ Failed to initialize GUI logger: " + e.getMessage());
+            log("Failed to start ffplay: " + e.getMessage());
         }
     }
 
-    private double performSpeedTest() {
-        try {
-            System.out.print("Testing speed");
-            for (int i = 0; i < 5; i++) {
-                Thread.sleep(1000);
-                System.out.print(".");
-            }
-            System.out.println();
-        } catch (InterruptedException ignored) {}
-        return 4.0 + Math.random() * 10;
-    }
+    private String resolveProtocol(String userChoice, String fileName) {
+        if (!"Auto".equals(userChoice)) return userChoice;
 
-    private String autoProtocol(String fileName) {
         if (fileName.contains("240p")) return "TCP";
         if (fileName.contains("360p") || fileName.contains("480p")) return "UDP";
         return "RTP";
     }
 
-    private void logClientStats(String file, String protocol, double speed) {
-        File statsFile = new File("logs/stats_client.csv");
+    private void log(String message) {
+        Platform.runLater(() -> logArea.appendText(message + "\n"));
+    }
+
+    private double simulateSpeedTest() {
         try {
-            if (!statsFile.exists()) {
-                try (PrintWriter writer = new PrintWriter(statsFile)) {
-                    writer.println("Timestamp,Filename,Protocol,Speed(Mbps)");
-                }
-            }
-            try (PrintWriter out = new PrintWriter(new FileWriter(statsFile, true))) {
-                String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-                out.printf("%s,%s,%s,%.2f%n", timestamp, file, protocol, speed);
-            }
-        } catch (IOException e) {
-            logger.warning("⚠️ Failed to write client stats: " + e.getMessage());
-        }
+            log("Simulating speed test for 5 seconds...");
+            Thread.sleep(5000);
+        } catch (InterruptedException ignored) {}
+        return 4 + Math.random() * 16;
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new StreamingClientGUI().setVisible(true));
+        launch(args);
     }
 }
