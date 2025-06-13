@@ -1,0 +1,32 @@
+Jun 13, 2025 6:03:26 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Speed test: 13.324854260939093 Mbps
+Jun 13, 2025 6:03:33 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: ▶️ Launching ffplay: Grb-240p.mp4 via TCP
+Jun 13, 2025 6:03:42 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Speed test: 4.097498498746803 Mbps
+Jun 13, 2025 6:03:45 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: ▶️ Launching ffplay: Grb-240p.mp4 via TCP
+Jun 13, 2025 6:04:11 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Speed test: 5.777823450254657 Mbps
+Jun 13, 2025 6:04:16 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: ▶️ Launching ffplay: Grb-360p.mp4 via TCP
+Jun 13, 2025 6:04:51 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Speed test: 4.2899174346701034 Mbps
+Jun 13, 2025 6:04:54 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: ▶️ Launching ffplay: Grb-360p.mkv via TCP
+Jun 13, 2025 6:05:07 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Speed test: 7.473226636101023 Mbps
+Jun 13, 2025 6:05:11 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: ▶️ Launching ffplay: Grb-240p.mp4 via UDP
+Jun 13, 2025 6:05:43 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Speed test: 9.674303179228126 Mbps
+Jun 13, 2025 6:05:47 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: ▶️ Launching ffplay: Grb-240p.avi via UDP
+Jun 13, 2025 6:29:08 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Speed test: 12.206038456018875 Mbps
+Jun 13, 2025 6:29:14 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: ▶️ Launching ffplay: Grb-240p.mp4 via TCP
+Jun 13, 2025 6:29:33 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: [GUI] Speed test: 4.4830361570436335 Mbps
+Jun 13, 2025 6:29:36 AM sofia.streaming.client.StreamingClientGUI connectToServer
+INFO: ▶️ Launching ffplay: Grb-360p.mp4 via UDP

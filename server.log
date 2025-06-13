@@ -1,0 +1,924 @@
+Jun 13, 2025 2:22:56 AM sofia.streaming.server.StreamingServer main
+INFO: 📂 Checking video files in 'videos' folder...
+Jun 13, 2025 2:22:56 AM sofia.streaming.server.StreamingServer main
+INFO: ✅ Server started on port 8888.
+Jun 13, 2025 2:22:56 AM sofia.streaming.server.StreamingServer main
+INFO: ⏳ Waiting for client...
+Jun 13, 2025 2:23:43 AM sofia.streaming.server.StreamingServer main
+INFO: 📥 Client connected with speed: 19.00584937606351 Mbps, format: mp4
+Jun 13, 2025 2:23:43 AM sofia.streaming.server.StreamingServer main
+INFO: ⏳ Waiting for client...
+Jun 13, 2025 2:23:48 AM sofia.streaming.server.StreamingServer main
+INFO: 📥 Client connected with speed: 19.00584937606351 Mbps, format: mp4
+Jun 13, 2025 2:23:48 AM sofia.streaming.server.StreamingServer main
+INFO: 📤 Sending file: Grb-240p.mp4 via UDP
+Jun 13, 2025 2:23:48 AM sofia.streaming.server.StreamingServer main
+INFO: ⏳ Waiting for client...
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+INFO: 📂 Checking video files in 'videos' folder...
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+INFO: ⚙️ Creating: Grb-240p.mp4
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] ffmpeg version 2025-06-08-git-5fea5e3e11-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   built with gcc 15.1.0 (Rev4, Built by MSYS2 project)
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavutil      60.  3.100 / 60.  3.100
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavcodec     62.  3.101 / 62.  3.101
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavformat    62.  1.100 / 62.  1.100
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavdevice    62.  0.100 / 62.  0.100
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavfilter    11.  0.100 / 11.  0.100
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswscale      9.  0.100 /  9.  0.100
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswresample   6.  0.100 /  6.  0.100
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/Grb-480p.mp4':
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf57.66.105
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Duration: 00:00:27.86, start: 0.033000, bitrate: 130 kb/s
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 8:9 DAR 4:3], 127 kb/s, 29.97 fps, 29.97 tbr, 30k tbn, Start 0.033000 (default)
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Stream mapping:
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Press [q] to stop, [?] for help
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] using SAR=160/213
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] profile High, level 2.1, 4:2:0, 8-bit
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] 264 - core 165 r3221 291476d - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=7 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Output #0, mp4, to 'videos/Grb-240p.mp4':
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf62.1.100
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 426x240 [SAR 160:213 DAR 4:3], q=2-31, 29.97 fps, 30k tbn (default)
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       encoder         : Lavc62.3.101 libx264
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Side data:
+Jun 13, 2025 2:44:08 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  741 fps=0.0 q=29.0 size=       0KiB time=00:00:24.65 bitrate=   0.0kbits/s speed=47.4x elapsed=0:00:00.51    
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [out#0/mp4 @ 00000220941e3f80] video:164KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 6.146285%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  835 fps=0.0 q=-1.0 Lsize=     174KiB time=00:00:27.79 bitrate=  51.3kbits/s speed=50.5x elapsed=0:00:00.55    
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] frame I:6     Avg QP:16.10  size:  2517
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] frame P:308   Avg QP:19.12  size:   329
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] frame B:521   Avg QP:25.12  size:    98
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] consecutive B-frames: 10.2% 17.5%  7.2% 65.1%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] mb I  I16..4: 16.6% 60.9% 22.5%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] mb P  I16..4:  0.7%  1.5%  0.5%  P16..4:  4.7%  1.8%  1.0%  0.0%  0.0%    skip:89.7%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] mb B  I16..4:  0.1%  0.1%  0.1%  B16..8:  4.0%  0.4%  0.1%  direct: 0.4%  skip:94.9%  L0:34.9% L1:60.4% BI: 4.7%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] 8x8 transform intra:56.8% inter:54.4%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] coded y,uvDC,uvAC intra: 35.8% 30.3% 13.2% inter: 1.3% 1.4% 0.1%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] i16 v,h,dc,p: 41% 27% 12% 20%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 11% 40%  3%  2%  3%  2%  4%  3%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 42% 18% 22%  4%  4%  3%  3%  2%  2%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] i8c dc,h,v,p: 72% 10% 11%  7%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] Weighted P-Frames: Y:3.9% UV:1.9%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] ref P L0: 65.3% 13.7% 14.5%  6.3%  0.2%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] ref B L0: 70.7% 23.5%  5.8%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] ref B L1: 96.3%  3.7%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 00000220945687c0] kb/s:48.06
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+INFO: ⚙️ Creating: Grb-240p.avi
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] ffmpeg version 2025-06-08-git-5fea5e3e11-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   built with gcc 15.1.0 (Rev4, Built by MSYS2 project)
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavutil      60.  3.100 / 60.  3.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavcodec     62.  3.101 / 62.  3.101
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavformat    62.  1.100 / 62.  1.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavdevice    62.  0.100 / 62.  0.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavfilter    11.  0.100 / 11.  0.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswscale      9.  0.100 /  9.  0.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswresample   6.  0.100 /  6.  0.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/Grb-480p.mp4':
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf57.66.105
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Duration: 00:00:27.86, start: 0.033000, bitrate: 130 kb/s
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 8:9 DAR 4:3], 127 kb/s, 29.97 fps, 29.97 tbr, 30k tbn, Start 0.033000 (default)
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Stream mapping:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0 -> #0:0 (h264 (native) -> mpeg4 (native))
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Press [q] to stop, [?] for help
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Output #0, avi, to 'videos/Grb-240p.avi':
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     ISFT            : Lavf62.1.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0(und): Video: mpeg4 (FMP4 / 0x34504D46), yuv420p(tv, progressive), 426x240 [SAR 160:213 DAR 4:3], q=2-31, 200 kb/s, 29.97 fps, 29.97 tbn (default)
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       encoder         : Lavc62.3.101 mpeg4
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Side data:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [out#0/avi @ 0000014d0a203f80] video:804KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 3.188318%
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  835 fps=0.0 q=2.0 Lsize=     829KiB time=00:00:27.86 bitrate= 243.8kbits/s speed=92.7x elapsed=0:00:00.30    
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+INFO: ⚙️ Creating: Grb-240p.mkv
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] ffmpeg version 2025-06-08-git-5fea5e3e11-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   built with gcc 15.1.0 (Rev4, Built by MSYS2 project)
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavutil      60.  3.100 / 60.  3.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavcodec     62.  3.101 / 62.  3.101
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavformat    62.  1.100 / 62.  1.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavdevice    62.  0.100 / 62.  0.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavfilter    11.  0.100 / 11.  0.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswscale      9.  0.100 /  9.  0.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswresample   6.  0.100 /  6.  0.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/Grb-480p.mp4':
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf57.66.105
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Duration: 00:00:27.86, start: 0.033000, bitrate: 130 kb/s
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 8:9 DAR 4:3], 127 kb/s, 29.97 fps, 29.97 tbr, 30k tbn, Start 0.033000 (default)
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Stream mapping:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Press [q] to stop, [?] for help
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] using SAR=160/213
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] profile High, level 2.1, 4:2:0, 8-bit
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] 264 - core 165 r3221 291476d - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=7 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Output #0, matroska, to 'videos/Grb-240p.mkv':
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf62.1.100
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0(und): Video: h264 (H264 / 0x34363248), yuv420p(tv, progressive), 426x240 [SAR 160:213 DAR 4:3], q=2-31, 29.97 fps, 1k tbn (default)
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       encoder         : Lavc62.3.101 libx264
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Side data:
+Jun 13, 2025 2:44:09 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  616 fps=0.0 q=29.0 size=     127KiB time=00:00:20.48 bitrate=  50.6kbits/s speed=39.9x elapsed=0:00:00.51    
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [out#0/matroska @ 000002400a7d3f80] video:164KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 3.772260%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  835 fps=0.0 q=-1.0 Lsize=     170KiB time=00:00:27.79 bitrate=  50.2kbits/s speed=44.6x elapsed=0:00:00.62    
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] frame I:6     Avg QP:16.10  size:  2517
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] frame P:308   Avg QP:19.12  size:   329
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] frame B:521   Avg QP:25.12  size:    98
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] consecutive B-frames: 10.2% 17.5%  7.2% 65.1%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] mb I  I16..4: 16.6% 60.9% 22.5%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] mb P  I16..4:  0.7%  1.5%  0.5%  P16..4:  4.7%  1.8%  1.0%  0.0%  0.0%    skip:89.7%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] mb B  I16..4:  0.1%  0.1%  0.1%  B16..8:  4.0%  0.4%  0.1%  direct: 0.4%  skip:94.9%  L0:34.9% L1:60.4% BI: 4.7%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] 8x8 transform intra:56.8% inter:54.4%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] coded y,uvDC,uvAC intra: 35.8% 30.3% 13.2% inter: 1.3% 1.4% 0.1%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] i16 v,h,dc,p: 41% 27% 12% 20%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 11% 40%  3%  2%  3%  2%  4%  3%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 42% 18% 22%  4%  4%  3%  3%  2%  2%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] i8c dc,h,v,p: 72% 10% 11%  7%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] Weighted P-Frames: Y:3.9% UV:1.9%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] ref P L0: 65.3% 13.7% 14.5%  6.3%  0.2%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] ref B L0: 70.7% 23.5%  5.8%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] ref B L1: 96.3%  3.7%
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002400ab586c0] kb/s:48.06
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+INFO: ⚙️ Creating: Grb-360p.mp4
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] ffmpeg version 2025-06-08-git-5fea5e3e11-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   built with gcc 15.1.0 (Rev4, Built by MSYS2 project)
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavutil      60.  3.100 / 60.  3.100
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavcodec     62.  3.101 / 62.  3.101
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavformat    62.  1.100 / 62.  1.100
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavdevice    62.  0.100 / 62.  0.100
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavfilter    11.  0.100 / 11.  0.100
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswscale      9.  0.100 /  9.  0.100
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswresample   6.  0.100 /  6.  0.100
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/Grb-480p.mp4':
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf57.66.105
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Duration: 00:00:27.86, start: 0.033000, bitrate: 130 kb/s
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 8:9 DAR 4:3], 127 kb/s, 29.97 fps, 29.97 tbr, 30k tbn, Start 0.033000 (default)
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Stream mapping:
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Press [q] to stop, [?] for help
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] using SAR=3/4
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] profile High, level 3.0, 4:2:0, 8-bit
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] 264 - core 165 r3221 291476d - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Output #0, mp4, to 'videos/Grb-360p.mp4':
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf62.1.100
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 640x360 [SAR 3:4 DAR 4:3], q=2-31, 29.97 fps, 30k tbn (default)
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       encoder         : Lavc62.3.101 libx264
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Side data:
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+Jun 13, 2025 2:44:10 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  309 fps=0.0 q=29.0 size=       0KiB time=00:00:10.24 bitrate=   0.0kbits/s speed=20.3x elapsed=0:00:00.50    
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  816 fps=802 q=29.0 size=     256KiB time=00:00:27.16 bitrate=  77.2kbits/s speed=26.7x elapsed=0:00:01.01    
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [out#0/mp4 @ 0000019cf2953f80] video:288KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 3.614862%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  835 fps=804 q=-1.0 Lsize=     298KiB time=00:00:27.79 bitrate=  87.9kbits/s speed=26.8x elapsed=0:00:01.03    
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] frame I:6     Avg QP:15.37  size:  4304
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] frame P:262   Avg QP:17.38  size:   652
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] frame B:567   Avg QP:18.27  size:   172
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] consecutive B-frames:  4.3% 13.9%  4.7% 77.1%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] mb I  I16..4: 10.7% 76.0% 13.3%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] mb P  I16..4:  0.8%  2.5%  0.5%  P16..4:  4.6%  1.5%  0.8%  0.0%  0.0%    skip:89.4%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] mb B  I16..4:  0.1%  0.1%  0.0%  B16..8:  3.8%  0.3%  0.1%  direct: 0.3%  skip:95.3%  L0:42.7% L1:54.5% BI: 2.8%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] 8x8 transform intra:68.5% inter:60.8%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] coded y,uvDC,uvAC intra: 28.7% 31.0% 12.3% inter: 1.0% 1.2% 0.1%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] i16 v,h,dc,p: 36% 26%  9% 29%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 42% 10% 30%  3%  3%  3%  3%  3%  3%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38% 19% 21%  4%  5%  3%  5%  2%  3%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] i8c dc,h,v,p: 72% 10% 10%  8%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] Weighted P-Frames: Y:7.6% UV:3.4%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] ref P L0: 69.9% 12.5% 12.0%  5.2%  0.4%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] ref B L0: 62.2% 33.2%  4.6%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] ref B L1: 97.6%  2.4%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000019cf2cd87c0] kb/s:84.47
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+INFO: ⚙️ Creating: Grb-360p.avi
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] ffmpeg version 2025-06-08-git-5fea5e3e11-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   built with gcc 15.1.0 (Rev4, Built by MSYS2 project)
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavutil      60.  3.100 / 60.  3.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavcodec     62.  3.101 / 62.  3.101
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavformat    62.  1.100 / 62.  1.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavdevice    62.  0.100 / 62.  0.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavfilter    11.  0.100 / 11.  0.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswscale      9.  0.100 /  9.  0.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswresample   6.  0.100 /  6.  0.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/Grb-480p.mp4':
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf57.66.105
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Duration: 00:00:27.86, start: 0.033000, bitrate: 130 kb/s
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 8:9 DAR 4:3], 127 kb/s, 29.97 fps, 29.97 tbr, 30k tbn, Start 0.033000 (default)
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Stream mapping:
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0 -> #0:0 (h264 (native) -> mpeg4 (native))
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Press [q] to stop, [?] for help
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Output #0, avi, to 'videos/Grb-360p.avi':
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     ISFT            : Lavf62.1.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0(und): Video: mpeg4 (FMP4 / 0x34504D46), yuv420p(tv, progressive), 640x360 [SAR 3:4 DAR 4:3], q=2-31, 200 kb/s, 29.97 fps, 29.97 tbn (default)
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       encoder         : Lavc62.3.101 mpeg4
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Side data:
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [out#0/avi @ 0000020149013f80] video:852KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 3.008189%
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  835 fps=0.0 q=2.1 Lsize=     878KiB time=00:00:27.86 bitrate= 258.1kbits/s speed=77.7x elapsed=0:00:00.35    
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+INFO: ⚙️ Creating: Grb-360p.mkv
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] ffmpeg version 2025-06-08-git-5fea5e3e11-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   built with gcc 15.1.0 (Rev4, Built by MSYS2 project)
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavutil      60.  3.100 / 60.  3.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavcodec     62.  3.101 / 62.  3.101
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavformat    62.  1.100 / 62.  1.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavdevice    62.  0.100 / 62.  0.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavfilter    11.  0.100 / 11.  0.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswscale      9.  0.100 /  9.  0.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswresample   6.  0.100 /  6.  0.100
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/Grb-480p.mp4':
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf57.66.105
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Duration: 00:00:27.86, start: 0.033000, bitrate: 130 kb/s
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 8:9 DAR 4:3], 127 kb/s, 29.97 fps, 29.97 tbr, 30k tbn, Start 0.033000 (default)
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Stream mapping:
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Jun 13, 2025 2:44:11 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Press [q] to stop, [?] for help
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] using SAR=3/4
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] profile High, level 3.0, 4:2:0, 8-bit
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] 264 - core 165 r3221 291476d - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Output #0, matroska, to 'videos/Grb-360p.mkv':
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf62.1.100
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0(und): Video: h264 (H264 / 0x34363248), yuv420p(tv, progressive), 640x360 [SAR 3:4 DAR 4:3], q=2-31, 29.97 fps, 1k tbn (default)
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       encoder         : Lavc62.3.101 libx264
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Side data:
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  333 fps=0.0 q=29.0 size=     143KiB time=00:00:11.04 bitrate= 106.1kbits/s speed=21.2x elapsed=0:00:00.52    
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [out#0/matroska @ 000002e18eb63f80] video:288KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 2.160303%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  835 fps=834 q=-1.0 Lsize=     294KiB time=00:00:27.79 bitrate=  86.7kbits/s speed=27.8x elapsed=0:00:01.00    
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] frame I:6     Avg QP:15.37  size:  4304
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] frame P:262   Avg QP:17.38  size:   652
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] frame B:567   Avg QP:18.27  size:   172
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] consecutive B-frames:  4.3% 13.9%  4.7% 77.1%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] mb I  I16..4: 10.7% 76.0% 13.3%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] mb P  I16..4:  0.8%  2.5%  0.5%  P16..4:  4.6%  1.5%  0.8%  0.0%  0.0%    skip:89.4%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] mb B  I16..4:  0.1%  0.1%  0.0%  B16..8:  3.8%  0.3%  0.1%  direct: 0.3%  skip:95.3%  L0:42.7% L1:54.5% BI: 2.8%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] 8x8 transform intra:68.5% inter:60.8%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] coded y,uvDC,uvAC intra: 28.7% 31.0% 12.3% inter: 1.0% 1.2% 0.1%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] i16 v,h,dc,p: 36% 26%  9% 29%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 42% 10% 30%  3%  3%  3%  3%  3%  3%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38% 19% 21%  4%  5%  3%  5%  2%  3%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] i8c dc,h,v,p: 72% 10% 10%  8%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] Weighted P-Frames: Y:7.6% UV:3.4%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] ref P L0: 69.9% 12.5% 12.0%  5.2%  0.4%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] ref B L0: 62.2% 33.2%  4.6%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] ref B L1: 97.6%  2.4%
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 000002e18eee86c0] kb/s:84.47
+Jun 13, 2025 2:44:12 AM sofia.streaming.server.StreamingServer main
+INFO: ⚙️ Creating: Grb-480p.avi
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] ffmpeg version 2025-06-08-git-5fea5e3e11-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   built with gcc 15.1.0 (Rev4, Built by MSYS2 project)
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavutil      60.  3.100 / 60.  3.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavcodec     62.  3.101 / 62.  3.101
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavformat    62.  1.100 / 62.  1.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavdevice    62.  0.100 / 62.  0.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavfilter    11.  0.100 / 11.  0.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswscale      9.  0.100 /  9.  0.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswresample   6.  0.100 /  6.  0.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/Grb-480p.mp4':
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf57.66.105
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Duration: 00:00:27.86, start: 0.033000, bitrate: 130 kb/s
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 8:9 DAR 4:3], 127 kb/s, 29.97 fps, 29.97 tbr, 30k tbn, Start 0.033000 (default)
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Stream mapping:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0 -> #0:0 (h264 (native) -> mpeg4 (native))
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Press [q] to stop, [?] for help
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [mpeg4 @ 000001d12d7e8740] Invalid pixel aspect ratio 320/427, limit is 255/255 reducing
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Output #0, avi, to 'videos/Grb-480p.avi':
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     ISFT            : Lavf62.1.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0(und): Video: mpeg4 (FMP4 / 0x34504D46), yuv420p(tv, progressive), 854x480 [SAR 191:255 DAR 81557:61200], q=2-31, 200 kb/s, 29.97 fps, 29.97 tbn (default)
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       encoder         : Lavc62.3.101 mpeg4
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Side data:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [out#0/avi @ 000001d12d463f80] video:965KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 2.650157%
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  835 fps=0.0 q=19.1 Lsize=     991KiB time=00:00:27.86 bitrate= 291.3kbits/s speed=61.3x elapsed=0:00:00.45    
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+INFO: ⚙️ Creating: Grb-480p.mkv
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] ffmpeg version 2025-06-08-git-5fea5e3e11-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   built with gcc 15.1.0 (Rev4, Built by MSYS2 project)
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavutil      60.  3.100 / 60.  3.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavcodec     62.  3.101 / 62.  3.101
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavformat    62.  1.100 / 62.  1.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavdevice    62.  0.100 / 62.  0.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libavfilter    11.  0.100 / 11.  0.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswscale      9.  0.100 /  9.  0.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   libswresample   6.  0.100 /  6.  0.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/Grb-480p.mp4':
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf57.66.105
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Duration: 00:00:27.86, start: 0.033000, bitrate: 130 kb/s
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x480 [SAR 8:9 DAR 4:3], 127 kb/s, 29.97 fps, 29.97 tbr, 30k tbn, Start 0.033000 (default)
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Stream mapping:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Press [q] to stop, [?] for help
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] using SAR=320/427
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] profile High, level 3.1, 4:2:0, 8-bit
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] 264 - core 165 r3221 291476d - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] Output #0, matroska, to 'videos/Grb-480p.mkv':
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Metadata:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     major_brand     : isom
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     minor_version   : 512
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     compatible_brands: isomiso2avc1mp41
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     encoder         : Lavf62.1.100
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]   Stream #0:0(und): Video: h264 (H264 / 0x34363248), yuv420p(tv, progressive), 854x480 [SAR 320:427 DAR 4:3], q=2-31, 29.97 fps, 1k tbn (default)
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Metadata:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       encoder         : Lavc62.3.101 libx264
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       handler_name    : VideoHandler
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       vendor_id       : [0][0][0][0]
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]     Side data:
+Jun 13, 2025 2:44:13 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG]       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  232 fps=0.0 q=29.0 size=      96KiB time=00:00:07.67 bitrate= 102.6kbits/s speed=14.9x elapsed=0:00:00.51    
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  543 fps=521 q=29.0 size=     256KiB time=00:00:18.05 bitrate= 116.2kbits/s speed=17.3x elapsed=0:00:01.04    
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [out#0/matroska @ 0000020dfdba3f80] video:437KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.453771%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] frame=  835 fps=613 q=-1.0 Lsize=     443KiB time=00:00:27.79 bitrate= 130.6kbits/s speed=20.4x elapsed=0:00:01.36    
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] frame I:6     Avg QP:13.93  size:  5346
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] frame P:245   Avg QP:17.66  size:   974
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] frame B:584   Avg QP:18.65  size:   301
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] consecutive B-frames:  2.9% 10.3%  4.0% 82.9%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] mb I  I16..4: 13.7% 77.5%  8.8%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] mb P  I16..4:  0.8%  2.4%  0.3%  P16..4:  4.6%  1.3%  0.6%  0.0%  0.0%    skip:90.0%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] mb B  I16..4:  0.2%  0.2%  0.0%  B16..8:  4.2%  0.2%  0.1%  direct: 0.4%  skip:94.7%  L0:45.6% L1:52.0% BI: 2.3%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] 8x8 transform intra:69.3% inter:65.2%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] coded y,uvDC,uvAC intra: 25.0% 31.8% 10.4% inter: 1.0% 1.3% 0.0%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] i16 v,h,dc,p: 39% 25%  8% 27%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 47% 12% 25%  3%  2%  3%  2%  3%  3%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37% 18% 19%  4%  6%  4%  5%  3%  4%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] i8c dc,h,v,p: 69% 13% 10%  8%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] Weighted P-Frames: Y:9.0% UV:4.9%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] ref P L0: 67.6% 11.2% 14.4%  6.4%  0.4%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] ref B L0: 60.8% 34.4%  4.8%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] ref B L1: 96.3%  3.7%
+Jun 13, 2025 2:44:14 AM sofia.streaming.server.StreamingServer main
+WARNING: [FFMPEG] [libx264 @ 0000020dfdff86c0] kb/s:128.20
+Jun 13, 2025 2:44:15 AM sofia.streaming.server.StreamingServer main
+INFO: ✅ Server started on port 8888.
+Jun 13, 2025 2:44:15 AM sofia.streaming.server.StreamingServer main
+INFO: ⏳ Waiting for client...
+Jun 13, 2025 2:48:29 AM sofia.streaming.server.StreamingServer main
+INFO: 📥 Client connected with speed: 5.277728343768228 Mbps, format: mp4
+Jun 13, 2025 2:48:29 AM sofia.streaming.server.StreamingServer main
+INFO: ⏳ Waiting for client...
+Jun 13, 2025 2:48:35 AM sofia.streaming.server.StreamingServer main
+INFO: 📥 Client connected with speed: 5.277728343768228 Mbps, format: mp4
+Jun 13, 2025 2:48:35 AM sofia.streaming.server.StreamingServer main
+INFO: 📤 Sending file: Grb-240p.mp4 via UDP
+Jun 13, 2025 2:48:35 AM sofia.streaming.server.StreamingServer main
+INFO: ⏳ Waiting for client...
+Jun 13, 2025 3:03:33 AM sofia.streaming.server.StreamingServer main
+INFO: 📂 Checking video files in 'videos' folder...
+Jun 13, 2025 3:03:34 AM sofia.streaming.server.StreamingServer main
+INFO: ✅ Server started on port 8888.
+Jun 13, 2025 3:03:34 AM sofia.streaming.server.StreamingServer main
+INFO: ⏳ Waiting for client...
+Jun 13, 2025 3:04:24 AM sofia.streaming.server.StreamingServer main
+INFO: 📥 Client connected with speed: 14.956308315258278 Mbps, format: mp4
+Jun 13, 2025 3:04:24 AM sofia.streaming.server.StreamingServer main
+INFO: ⏳ Waiting for client...
+Jun 13, 2025 3:04:34 AM sofia.streaming.server.StreamingServer main
+INFO: 📥 Client connected with speed: 14.956308315258278 Mbps, format: mp4
+Jun 13, 2025 3:04:34 AM sofia.streaming.server.StreamingServer main
+INFO: 📤 Sending file: Grb-240p.mp4 via UDP
+Jun 13, 2025 3:04:34 AM sofia.streaming.server.StreamingServer main
+INFO: ⏳ Waiting for client...

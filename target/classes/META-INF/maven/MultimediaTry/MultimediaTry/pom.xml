@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  
+  
+  <groupId>MultimediaTry</groupId>
+  <artifactId>MultimediaTry</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <build>
+   <!-- <sourceDirectory>src/main/java</sourceDirectory> -->
+ <resources>
+    <resource>
+      <directory>src/main/resources</directory>
+    </resource>
+  </resources>
+  
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <release>21</release>
+        </configuration>
+      </plugin>
+      
+       <plugin>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-maven-plugin</artifactId>
+      <version>0.0.8</version>
+      <configuration>
+        <mainClass>sofia.streaming.client.StreamingClientGUI</mainClass>
+      </configuration>
+    </plugin>
+      
+    </plugins>
+    
+    
+    
+    
+  </build>
+  
+  <dependencies>
+        <!--μέτρηση ταχύτητας -->
+        <dependency>
+            <groupId>fr.bmartel</groupId>
+            <artifactId>jspeedtest</artifactId>
+            <version>1.32.1</version>
+        </dependency>
+
+		<dependency>
+   			 <groupId>org.openjfx</groupId>
+   			 <artifactId>javafx-controls</artifactId>
+       		<version>21.0.1</version>
+		 </dependency>
+		 
+		  <dependency>
+        	<groupId>org.openjfx</groupId>
+       		 <artifactId>javafx-fxml</artifactId>
+     		  <version>21.0.1</version>
+	    </dependency>
+
+        <!-- FFmpeg wrapper  -->
+        <dependency>
+            <groupId>net.bramp.ffmpeg</groupId>
+            <artifactId>ffmpeg</artifactId>
+            <version>0.6.2</version>
+        </dependency>
+
+        <!-- Log4j για καταγραφή logs  -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+        
+        <dependency>
+ 			<groupId>org.apache.logging.log4j</groupId>
+ 			<artifactId>log4j-slf4j-impl</artifactId>
+ 			<version>2.11.2</version>
+		</dependency>
+		
+     
+    </dependencies>
+  
+  
+</project>

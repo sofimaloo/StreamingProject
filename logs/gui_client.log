@@ -1,0 +1,18 @@
+Jun 13, 2025 4:09:40 AM sofia.streaming.client.StreamingClientGUI log
+INFO: 🔵 GUI started.
+Jun 13, 2025 4:09:45 AM sofia.streaming.client.StreamingClientGUI log
+INFO: 🧪 Testing speed...
+Jun 13, 2025 4:09:45 AM sofia.streaming.client.StreamingClientGUI log
+INFO: ⏳ Simulating download for 5 seconds...
+Jun 13, 2025 4:09:50 AM sofia.streaming.client.StreamingClientGUI log
+INFO: 📶 Speed: 9.58 Mbps
+Jun 13, 2025 4:09:50 AM sofia.streaming.client.StreamingClientGUI log
+INFO: ✅ Received 3 suitable files.
+Jun 13, 2025 4:10:08 AM sofia.streaming.client.StreamingClientGUI log
+INFO: 🎬 Starting: Grb-240p.mp4 via UDP
+Jun 13, 2025 4:10:08 AM sofia.streaming.client.StreamingClientGUI log
+INFO: 🎥 Streaming started at 2025-06-13 04:10:08
+Jun 13, 2025 4:10:36 AM sofia.streaming.client.StreamingClientGUI log
+INFO: 🎬 Starting: Grb-240p.mp4 via TCP
+Jun 13, 2025 4:10:36 AM sofia.streaming.client.StreamingClientGUI log
+INFO: 🎥 Streaming started at 2025-06-13 04:10:36
